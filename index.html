@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">⌨️ Typing Speed Test</h1>
+
+    <div class="controls">
+      <div><strong>⏱ Time:</strong> <span id="timer">30</span>s</div>
+      <div><strong>✅ Correct:</strong> <span id="cw">0</span></div>
+      <div><strong>⚡ WPM:</strong> <span id="wpm">0</span></div>
+      <div><strong>🎯 Accuracy:</strong> <span id="accuracy">100%</span></div>
+    </div>
+
+    <div class="words" id="words"></div>
+    <input type="text" id="input" placeholder="Start typing..." autofocus />
+    
+    <div class="buttons">
+      <button id="restartBtn" onclick="startGame()">🔁 Restart</button>
+      <button id="toggle-dark">🌙 Dark Mode</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
